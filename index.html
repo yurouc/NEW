@@ -3,87 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Page with Animation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #0056b3;
-            /* 加入動畫 */
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .about {
-            margin-top: 20px;
-        }
-        img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            /* 加入動畫 */
-            animation: fadeInScale 2s ease-in-out;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0056b3;
-        }
-
-        /* 定義動畫 */
-        @keyframes fadeInScale {
-            0% {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+    <title>Dessert Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Sweet Treats Dessert Shop</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>Welcome to My Personal Page</h1>
-        <p>Hello! My name is [Your Name]. I am a student studying Medical Informatics at Fu Jen Catholic University.</p>
-
-        <!-- 加入圖片 -->
-        <img src="https://via.placeholder.com/150" alt="My Photo">
-
-        <!-- 關於我的區塊 -->
-        <div class="about">
-            <h2>About Me</h2>
-            <p>I love reading science fiction and psychology books. I enjoy learning about technology and how it can improve our understanding of the human mind.</p>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="dessert-item">
+            <h3>Chocolate Cake</h3>
+            <p>$5.00</p>
         </div>
-
-        <!-- 社交連結 -->
-        <div class="social-links">
-            <h2>Connect with Me</h2>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <div class="dessert-item">
+            <h3>Macarons</h3>
+            <p>$3.00</p>
         </div>
-    </div>
+        <div class="dessert-item">
+            <h3>Ice Cream Sundae</h3>
+            <p>$4.00</p>
+        </div>
+    </section>
 
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Sweet Treats, where we bring joy in every bite! Our desserts are made fresh daily with the finest ingredients.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@sweettreats.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sweet Treats Dessert Shop</p>
+    </footer>
 </body>
 </html>
